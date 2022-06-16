@@ -1,0 +1,79 @@
+.container {
+    margin: 1%;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(3, 87%, 63%);
+    color: white;
+    font-weight: 600;
+    padding: 4%;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between
+}
+
+.main-box-nav {
+    width: 15rem;
+    margin: 1% 1%;
+}
+
+.main-box-nav-ul {
+    padding: 2%;
+    margin: 0;
+}
+
+.main-box-nav-ul-item {
+    background-color: rgb(167, 165, 165);
+    width: 90%;
+    list-style: none;
+    margin: 2%;
+    color: white;
+    padding: 1% 5%;
+}
+
+.main-box-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+    grid-gap: 1vw;
+    width: 100%;
+    height: 100%;
+    justify-items: stretch;
+    margin: 1%;
+}
+
+@media screen and (min-width:768px )
+and (max-width:1023px) {
+    .main-box-div {
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr))
+    }
+}
+@media screen and (min-width:1024px ) {
+    .main-box-div {
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr))
+    }
+}
+
+.main-box-div-pictures {
+    background-size: cover;
+}
+
+.main-box-div-pictures-img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(3, 87%, 63%);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    padding: 2.5%;
+}
